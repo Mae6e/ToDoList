@@ -1,0 +1,61 @@
+div.board {
+	height: 600px;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+div.board {
+	background-color: brown;
+	width: 100%;
+	background: #f54b55;
+	background: -moz-radial-gradient(center, ellipse cover, #f54b55 57%, #e24953 99%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(57%, #f54b55), color-stop(99%, #e24953));
+	background: -webkit-radial-gradient(center, ellipse cover, #f54b55 57%, #e24953 99%);
+	background: -o-radial-gradient(center, ellipse cover, #f54b55 57%, #e24953 99%);
+	background: -ms-radial-gradient(center, ellipse cover, #f54b55 57%, #e24953 99%);
+	background: radial-gradient(ellipse at center, #f54b55 57%, #e24953 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f54b55', endColorstr='#e24953', GradientType=1);
+}
+
+
+.btn-add{
+	background: none;
+	position: absolute;
+	border: none;
+    z-index: 99999;
+	bottom: 30px;
+    right: 30px;
+	cursor: pointer;
+	outline: none;
+}
+
+.btn-add img{
+	height: 42px;
+	box-shadow: 10px 10px 21px rgb(152 15 24);
+	-webkit-box-shadow: 10px 10px 21px rgb(152 15 24);
+	border-radius: 25px;
+    background: #6c6a74;
+}
+
+.btn-add:hover {
+	animation: shake 5s;
+	animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }

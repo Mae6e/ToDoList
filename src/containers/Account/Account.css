@@ -1,0 +1,76 @@
+
+@font-face {
+	font-family: dinar;
+	src: url('../../constants/Far_Dinar_Two_Medium.ttf');
+}
+
+.login {
+    background: #ffffff;
+    display: flex;
+    text-align: justify;
+    align-content: center;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 10%;
+    justify-content: center;
+    width: 20rem;
+    margin: 7rem auto;
+    max-width: 80%;
+    font-family: cursive , dinar;
+}
+
+.login div{
+  margin-bottom: 1rem;
+}
+
+.login div label{
+    display: block;
+    width: 100%;
+    font-size: 15px;
+}
+
+.login div input {
+    display: block;
+    font: inherit;
+    padding: 0.1rem 0.25rem;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    border: 0.5px solid #6c6a748c;
+    height: 25px;
+  }
+
+  .login div button{
+    background: #6c6a74;
+    width: 100%;
+    outline: none;
+    border: navajowhite;
+    border-radius: 3px;
+    height: 32px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .login form{
+    margin: 2rem;
+  }
+
+  .error-message{
+    color: red;
+    font-size: 12px;
+  }
+
+  .success-message{
+    color: green;
+    font-size: 12px;
+  }
+
+  .box-error{
+    border: 0.5px solid red !important;
+  }
+
+  .box-success{
+    border: 0.5px solid green !important;
+  }

@@ -1,0 +1,96 @@
+
+@font-face {
+	font-family: dinar;
+	src: url('../../constants/Far_Dinar_Two_Medium.ttf');
+}
+
+div.note {
+	height: 150px;
+	width: 150px;
+	background-color: yellow;
+	margin: 2px 0;
+	position: absolute;
+	cursor: -webkit-grab;
+	-webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+	box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+    border: 1px solid #ffff80;
+    border-radius: 2px;
+}
+
+div.note:active {
+	cursor: -webkit-grabbing;
+}
+
+div.note p {
+	font-size: 22px;
+	padding: 5px;
+	font-family: "Shadows Into Light", Arial;
+}
+
+div.note:hover > span {
+	opacity: 1;
+}
+
+div.note > span {
+	position: absolute;
+	bottom: 2px;
+	right: 2px;
+	opacity: 0;
+	transition: opacity .25s linear;
+}
+
+div.note button {
+    margin: 2px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+div.note > textarea {
+	height: 75%;
+	background: rgba(255, 255, 255, .5);
+    width: 100%;
+   -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;   
+    box-sizing: border-box;  
+    font-family: cursive , dinar;
+    outline: none;
+    padding: 7px;
+    resize: none;
+	font-size: 17px;
+}
+
+
+.selected-note{
+	/* z-index: 999; */
+    border:0.5px solid #c4c40d  !important;
+}
+
+
+div.node-note{
+	position: absolute;
+}
+
+
+/* *****scrollbar***** */
+
+::-webkit-scrollbar {
+	width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	/* box-shadow: inset 0 0 5px grey;  */
+	border-radius: 7px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: grey; 
+	border-radius: 7px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: grey; 
+  }
